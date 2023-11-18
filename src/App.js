@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import ColorBlock from './Components/ColorBlock'
 
 function App() {
@@ -9,12 +9,14 @@ function App() {
     )
   })
 
-  return (
-    <div className="App">
-      {colorMap}
-    </div>
-  );
-}
+    return (
+      <div className="App">
+        {colorMap ((color,i) => (
+          <ColorBlock key={i} color={color}/>
+        ))}
+      </div>
+    );
+  }
 
 export default App;
 

@@ -1,14 +1,14 @@
-import React,{ useState } from ' react'
+import React , { useState } from 'react'
 
 function ColorForm(props){
-    let [input, setInput] = useState('')
+    let [Input, setInput] = useState('')
 
     const handleSubmit = (e) => {
         // eliminate the default behavior of form submission
         e.preventDefault()
         // addColor, function built in parent app.js, should be available within props
-        props.addColor(input)
-        }
+        props.addColor(Input)
+        } 
 
     return (
         <div>

@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import ColorBlock from './ColorBlock'
-import ColorForm from './ColorForm'
+import React, { useState } from 'react'
+import ColorBlock from './Components/ColorBlock.js'
+import ColorForm from './Components/ColorForm.js'
 
 function App() {
   let [colors, setColors] =  useState([
